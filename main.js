@@ -26,7 +26,6 @@ function tree() {
   //draws tree
 
   ctx.fillStyle= "green";
-  ctx.strokeStyle= "black";
 
   ctx.beginPath();
   ctx.moveTo(300, 20);
@@ -35,7 +34,6 @@ function tree() {
   ctx.closePath();
 
   ctx.fill();
-  ctx.stroke();
 }
 
 function stump() {
