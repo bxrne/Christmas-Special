@@ -43,7 +43,7 @@ function stump() {
   ctx.fillStyle = "#340d0d";
   ctx.strokeStyle = "black";
 
-  ctx.rect(270, 500, 50, 600);
+  ctx.rect(270, 450, 50, 550);
   ctx.fill();
   ctx.stroke();
 }
