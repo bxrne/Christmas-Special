@@ -6,7 +6,7 @@ var colors = ["#00ef00", "#2828ff", "#b200b2", "#e0bd00", "#ff3233"];
 
 canvas.addEventListener('click', clicker, false);
 function download() {
-    var dt = canvas.toDataURL();
+    var dt = canvas.toDataURL('image/png', 1.0);
     this.href = dt; //this may not work in the future..
 }
 document.getElementById('download').addEventListener('click', download, false);
