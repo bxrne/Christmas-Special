@@ -2,10 +2,14 @@ window.onload = init();
 
 var canvas, ctx;
 
-var colors = ["#FF0000", "#00bc00", "blue", "purple"];
+var colors = ["#00ef00", "#2828ff", "#b200b2", "#e0bd00", "#ff3233"];
 
 canvas.addEventListener('click', clicker, false);
-
+function download() {
+    var dt = canvas.toDataURL();
+    this.href = dt; //this may not work in the future..
+}
+document.getElementById('download').addEventListener('click', download, false);
 function init() {
   //initializes canvas and context
 
@@ -13,7 +17,7 @@ function init() {
   ctx = canvas.getContext("2d");
   stump();
   tree();
-  star(ctx, 300, 60, 5, 70, 30);
+  star(ctx, 300, 70, 5, 70, 30);
 
 
 }
@@ -52,7 +56,7 @@ function clicker(e) {
 }
 
 function bauble(x, y) {
-  var rn = Math.floor(Math.random()*4);
+  var rn = Math.floor(Math.random()*5);
   ctx.fillStyle = colors[rn];
   ctx.strokeStyle = "black";
   ctx.beginPath();

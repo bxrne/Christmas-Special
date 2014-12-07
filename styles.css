@@ -1,4 +1,43 @@
 #canvas {
+  padding:0;
+  margin-top:0;
   border: 1px solid black;
   background-color:rgba(122,122,255, 0.46);
+}
+
+body {
+  padding:0;
+  margin:0;
+}
+
+.download {
+  width:auto;
+  height:auto;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:5px;
+  padding-bottom:5px;
+  background-color:#ddd;
+  border: 1px solid black;
+  outline: 0 none;
+  margin:0;
+}
+
+a {
+  color:black;
+  font-family: 'Helvetica Neue';
+  text-decoration:none;
+  font-size:25px;
+}
+a:hover {
+  color:black;
+  font-family: 'Helvetica Neue';
+  text-decoration:none;
+    font-size:25px;
+}
+ a:visited {
+  color:black;
+  font-family: 'Helvetica Neue';
+  text-decoration:none;
+    font-size:25px;
 }
